@@ -1,0 +1,99 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+*:focus:not( :focus-visible) {
+    outline: none;
+}
+
+html,
+body {
+    font-size: 61.5%;;
+}
+
+body {
+    background-image: url('../img/background.jpg');
+}
+
+.container {
+    width: 113.5rem; /*1rem =10px, browser 16px , wir brauchen 10px, deswegen 61.5%*/
+    margin: 0 auto;
+}
+.header {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    width: 7.9rem;
+    height: 2.8rem;
+    margin-right: 3.9rem;
+}
+
+.header__nav a:not(:last-child) {
+    margin-right: 2.4rem;
+}
+
+.header__nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.header__socials-icon {
+    width: 1.7rem;
+    height: 1.6rem;
+}
+
+.header__socials-icon:not(:last-child)
+{
+    margin-right: 2rem;
+}
+
+.footer {
+    background: #030102;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__menu {
+    padding-left: 0;
+    display: flex;
+}
+
+.footer__menu li {
+    list-style: none;
+}
+
+.footer__menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+.footer__menu li:not(:last-child){
+    margin-right: 2.5rem;
+}
+
+.footer__copy {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
