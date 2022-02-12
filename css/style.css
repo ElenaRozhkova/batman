@@ -11,17 +11,20 @@ body {
     font-size: 61.5%;;
 }
 
-body {
-    background-image: url('../img/background.jpg');
+h1 {
+    margin: 0;
+    padding: 0;
 }
-
 .container {
     width: 113.5rem; /*1rem =10px, browser 16px , wir brauchen 10px, deswegen 61.5%*/
     margin: 0 auto;
 }
 .header {
-    padding-top: 6.4rem;
+    position: absolute;
     padding-bottom: 6.4rem;
+    left: 50%;
+    top: 6.4rem;
+    transform: translate(-50%, 0)
 }
 .header .container {
     display: flex;
@@ -47,7 +50,7 @@ body {
     text-decoration: none;
     font-weight: normal;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 114%;
 }
 
 .header__socials-icon {
@@ -58,6 +61,83 @@ body {
 .header__socials-icon:not(:last-child)
 {
     margin-right: 2rem;
+}
+
+.main__header {
+    font-weight: bold;
+    font-size: 7.6rem;
+    line-height: 120%;
+    color: #fff;
+}
+
+.main {
+    color: #fff;
+    padding-top: 18.6rem;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.main__rating-star {
+    width: 1.2rem;
+    height: 1.2rem;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.main__rating-star:not(:last-child) {
+    margin-right: .4rem;
+}
+
+.main-rating-numbers {
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 117%;
+}
+
+.main__rating-title {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 114%;
+    margin-bottom: 1.6rem;
+}
+
+.main__rating-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.main__rating-stars {
+    display: flex;
+    align-items: center;
+    margin-right: .9rem;
+}
+
+.main__description {
+    max-width: 52.8rem;
+    margin-bottom: 4.1rem;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 150%;
+}
+
+.main__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 114%;
+    color: #fff;
+    text-decoration: none;
+    max-width: 24.5rem;
+    background-color: #151515;
+    border-radius: .8rem;
+    padding: 2.2rem 7.2rem;
+    margin-bottom: 8.8rem;
 }
 
 .footer {
@@ -82,18 +162,22 @@ body {
 }
 
 .footer__menu li a {
-    color: #fff;
+    color: #868767;
     text-decoration: none;
     font-weight: normal;
     font-size: 1.4rem;
-    line-height: 2rem;
+    line-height: 143%;
 }
 .footer__menu li:not(:last-child){
     margin-right: 2.5rem;
 }
 
 .footer__copy {
+    color: #868767;
+    font-weight: normal;
     font-size: 1.4rem;
-    line-height: 2rem;
+    line-height: 143%;
 }
+
+
 
