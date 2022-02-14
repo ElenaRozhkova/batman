@@ -15,10 +15,109 @@ h1 {
     margin: 0;
     padding: 0;
 }
+
+img {
+    width: 100%;
+    height: 100%;
+}
 .container {
     width: 113.5rem; /*1rem =10px, browser 16px , wir brauchen 10px, deswegen 61.5%*/
     margin: 0 auto;
 }
+
+/*сетка*/
+@media (max-width: 108em) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 105em) {
+    html {
+        font-size: 8.75px;
+    }
+}
+
+@media (max-width: 91.5em) {
+    html {
+        font-size: 7.9px;
+    }
+}
+
+@media (max-width: 91em) {
+    html {
+        font-size: 8.4px;
+    }
+}
+
+@media (max-width: 90em) {
+    html {
+        font-size: 7.9px;
+    }
+}
+
+@media (max-width: 80em) {
+    html {
+        font-size: 7.2px
+    }
+}
+
+@media (max-width: 72em) {
+    html {
+        font-size: 6.5px;
+    }
+}
+
+@media (max-width: 64em) {
+    html {
+        font-size: 5.5px;
+    }
+}
+
+@media (max-width: 48em) {
+    html {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 44em) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 38em) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 34em) {
+    html {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 30em) {
+    html {
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 26em) {
+    html {
+        font-size: 4.5px;
+    }
+}
+
+@media (max-width: 21em) {
+    html {
+        font-size: 4.4px;
+    }
+}
+
+/*сетка*/
 .header {
     position: absolute;
     padding-bottom: 6.4rem;
@@ -34,6 +133,14 @@ h1 {
 .header__menu {
     display: flex;
     align-items: center;
+}
+
+.header__menu-close {
+    display: none;
+}
+
+.header__nav-mobile {
+    display: none;
 }
 .header__logo {
     width: 7.9rem;
@@ -58,11 +165,18 @@ h1 {
     height: 1.6rem;
 }
 
+.header__socials {
+   display: flex;
+}
+
 .header__socials-icon:not(:last-child)
 {
     margin-right: 2rem;
 }
 
+.menu-burger {
+    display: none;
+}
 .main__header {
     font-weight: bold;
     font-size: 7.6rem;
@@ -170,6 +284,11 @@ h1 {
     margin-left: 33.1rem;
 }
 
+.main__button-dark img{
+    width : 3.5rem;
+    height: 4rem;
+}
+
 .main__button-dark  {
     display: flex;
     justify-content: center;
@@ -239,6 +358,117 @@ h1 {
     font-weight: normal;
     font-size: 1.4rem;
     line-height: 143%;
+}
+
+@media (max-width: 48em) { /*mobile version 768px*/
+    html {
+        font-size: 10px;
+    }
+
+    .header {
+        display: none;
+        width: 69.5%;
+        background-color: #151515;
+        top: 0;
+        transform: translate(-28%, 0);
+        padding-bottom: 4rem;
+        padding-top: 4.2rem;
+        z-index: 10;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .header .container, .header__menu  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__menu-close {
+        display: block;
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+        display: block;
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__nav-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .header__nav-mobile a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 114%;
+    }
+    .header__nav-mobile a:not(:last-child){
+        margin-bottom: 1rem;
+    }
+
+    .header__logo {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+
+    .header__socials-icon {
+        margin-bottom: 1rem;
+    }
+    
+    .main__description-wrap {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .main__button-play {
+        margin-left: 0;
+    }
+
+    .main__button {
+        margin-bottom: 4.4rem;
+    }
+
+    .main-slider__arrow {
+        display: none;
+    }
+
+    .main-slider__wrap {
+        max-width: 53%;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main {
+        background-position-x: 66%;
+    }
+
+    .menu-burger {
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 6rem;
+        height: 6rem;
+    } 
+
 }
 
 
